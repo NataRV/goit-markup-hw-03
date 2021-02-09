@@ -25,9 +25,13 @@ p {
 
 .address {
   font-style: normal;
-  padding-bottom: 67px;
 }
 /* ========== HEADER ========== */
+
+.page-header {
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
 
 .logo-studio,
 .logo-web {
@@ -53,6 +57,10 @@ p {
 .nav-list .nav-link:focus,
 .nav-list .current {
   color: var(--accent-color);
+}
+.nav-list,
+.nav-list {
+  cursor: pointer;
 }
 
 /* ========== END HEADER ========== */
@@ -118,15 +126,19 @@ ul {
   margin-left: auto;
   margin-right: auto;
   outline: 2px solid red;
-  background-color: lightblue;
 }
 
+.section {
+  padding-bottom: 94px;
+}
 /* ========== END COMPONENTS ========== */
 
 /* ========== HERO ========== */
 .hero {
   text-align: center;
   outline: 2px solid red;
+  padding-left: 452px;
+  padding-right: 452px;
 }
 .hero-title {
   font-weight: 900;
@@ -134,11 +146,9 @@ ul {
   line-height: 1.363;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-
   color: var(--white-color);
   margin-top: 0;
   margin-bottom: 30px;
-  outline: 1px solid blue;
 }
 
 .hero-btn {
@@ -161,12 +171,12 @@ ul {
 .hero-btn:focus {
   background-color: var(--accent-color);
 }
+.hero-btn {
+  cursor: pointer;
+}
 /* ========== END HERO ========== */
 
 /* ========== Features========== */
-.feature-section {
-  margin-top: 94px;
-}
 .feature-title {
   font-weight: 700;
   font-size: 14px;
@@ -174,7 +184,7 @@ ul {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--primary-text-color);
-  margin-bottom: 9px;
+  margin-bottom: 10px;
 }
 .feature-text {
   font-size: 14px;
@@ -182,33 +192,33 @@ ul {
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
 }
-.list-item {
+.list-item: not(: last-child) {
   margin-right: 30px;
+}
+
+.feature-section {
+  padding-top: 94px;
 }
 /* ========== End Feature========== */
 
 /* ==========  what-we-do========== */
 
 .what-we-do {
-  margin-top: 94px;
-  margin-bottom: 94px;
   text-align: center;
 }
 .what-we-do-title {
   margin-bottom: 50px;
 }
-.what-we-do-list-item:last-child {
-  padding-bottom: 94px;
-}
+
 /* ========== what-we-do========== */
 /* ========== Our team========== */
 .our-team-section {
   background-color: var(--light-grey-bg-color);
   text-align: center;
   outline: 2px solid red;
+  padding-top: 94px;
 }
 .our-team-title {
-  padding-top: 94px;
   margin-bottom: 50px;
 }
 .team-member {
@@ -223,9 +233,6 @@ ul {
   line-height: 1.188;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
-}
-.team-list-item:last-child {
-  padding-bottom: 94px;
 }
 /* ========== End Our team========== */
 
@@ -246,7 +253,10 @@ ul {
 .logo-footer {
   color: var(--white-color);
 }
-
+.page-footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
 /* ========== End Footer========== */
 
 /* ========== Portfolio ========== */
@@ -266,12 +276,11 @@ ul {
   color: var(--secondary-text-color);
 }
 .portfolio {
-  margin-top: 94px;
-  margin-bottom: 94px;
+  padding-top: 94px;
+  padding-bottom: 94px;
   text-align: center;
 }
 .projects {
-  padding-top: 34px;
-  padding-bottom: 94px;
+  margin-top: 34px;
 }
 /* ========== END Portfolio ========== */
