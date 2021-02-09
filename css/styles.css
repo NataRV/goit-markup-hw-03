@@ -46,6 +46,10 @@ p {
   color: var(--accent-color);
 }
 .nav-link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   font-weight: 500;
   font-size: 14px;
   line-height: 1.143;
@@ -62,12 +66,30 @@ p {
 .nav-list {
   cursor: pointer;
 }
+.nav-list {
+  display: flex;
+}
 
+.nav-list li:not(:last-child) {
+  margin-right: 50px;
+}
+
+.header-contacts {
+  display: flex;
+}
+.header-contacts li + li {
+  margin-left: 50px;
+}
+.page-header-menu {
+  display: flex;
+  align-items: center;
+}
 /* ========== END HEADER ========== */
 
 /* ========== COMPONENTS ========== */
 
 .modal-btn {
+  display: inline-block;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.187;
@@ -76,6 +98,10 @@ p {
   letter-spacing: 0.06em;
   background-color: var(--light-grey-bg-color);
   border-radius: 4px;
+  padding: 6px 22px;
+}
+.modal-btn:not(last-child) {
+  margin-right: 8px;
 }
 .modal-btn:hover,
 .modal-btn:focus {
@@ -192,7 +218,7 @@ ul {
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
 }
-.list-item: not(: last-child) {
+.list-item:not(:last-child) {
   margin-right: 30px;
 }
 
@@ -282,5 +308,8 @@ ul {
 }
 .projects {
   margin-top: 34px;
+}
+.filter-buttons {
+  display: flex;
 }
 /* ========== END Portfolio ========== */
