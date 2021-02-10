@@ -28,11 +28,6 @@ p {
 }
 /* ========== HEADER ========== */
 
-.page-header {
-  padding-top: 24px;
-  padding-bottom: 25px;
-}
-
 .logo-studio,
 .logo-web {
   font-family: Raleway;
@@ -66,6 +61,7 @@ p {
 .nav-list {
   cursor: pointer;
 }
+
 .nav-list {
   display: flex;
 }
@@ -83,6 +79,16 @@ p {
 .page-header-menu {
   display: flex;
   align-items: center;
+}
+.nav {
+  display: flex;
+}
+
+.logo-header {
+  display: flex;
+  padding-top: 24px;
+  padding-bottom: 25px;
+  margin-right: 93px;
 }
 /* ========== END HEADER ========== */
 
