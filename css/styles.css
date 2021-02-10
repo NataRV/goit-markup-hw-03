@@ -72,6 +72,7 @@ p {
 
 .header-contacts {
   display: flex;
+  margin-left: auto;
 }
 .header-contacts li + li {
   margin-left: 50px;
@@ -79,6 +80,7 @@ p {
 .page-header-menu {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 .nav {
   display: flex;
@@ -231,6 +233,9 @@ ul {
 .feature-section {
   padding-top: 94px;
 }
+.list {
+  display: flex;
+}
 /* ========== End Feature========== */
 
 /* ==========  what-we-do========== */
@@ -241,7 +246,9 @@ ul {
 .what-we-do-title {
   margin-bottom: 50px;
 }
-
+.what-we-do-list-item:not(:last-child) {
+  margin-right: 30px;
+}
 /* ========== what-we-do========== */
 /* ========== Our team========== */
 .our-team-section {
@@ -266,6 +273,13 @@ ul {
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
 }
+.list-our-team {
+  display: flex;
+  justify-content: center;
+}
+.team-list-item:not(:last-child) {
+  margin-right: 30px;
+}
 /* ========== End Our team========== */
 
 /* ========== Footer========== */
@@ -288,6 +302,12 @@ ul {
 .page-footer {
   padding-top: 60px;
   padding-bottom: 60px;
+}
+.address {
+  margin-top: 20px;
+}
+.contact-information-list-item:not(:last-child) {
+  margin-bottom: 9px;
 }
 /* ========== End Footer========== */
 
@@ -314,8 +334,18 @@ ul {
 }
 .projects {
   margin-top: 34px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 .filter-buttons {
   display: flex;
+  justify-content: center;
+}
+.projects-item {
+  margin-bottom: 30px;
+}
+.projects-item:nth-last-child(-n + 3) {
+  margin-bottom: 0;
 }
 /* ========== END Portfolio ========== */
