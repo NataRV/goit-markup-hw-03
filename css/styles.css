@@ -77,6 +77,11 @@ p {
 .header-contacts li + li {
   margin-left: 50px;
 }
+.header-contacts-item {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
 .page-header-menu {
   display: flex;
   align-items: center;
@@ -303,8 +308,9 @@ ul {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-.address {
-  margin-top: 20px;
+.logo {
+  display: block;
+  margin-bottom: 20px;
 }
 .contact-information-list-item:not(:last-child) {
   margin-bottom: 9px;
