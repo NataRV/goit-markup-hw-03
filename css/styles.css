@@ -342,7 +342,7 @@ ul {
 .portfolio {
   padding-top: 94px;
   padding-bottom: 94px;
-  text-align: center;
+ 
 }
 .projects {
   margin-top: 34px;
@@ -354,6 +354,7 @@ ul {
   justify-content: center;
 }
 .projects-item {
+  display: block;
   margin-bottom: 30px;
   margin-right: 30px;
 }
@@ -364,7 +365,9 @@ ul {
   margin-bottom: 0;
 }
 
-
+.projects-text{
+  margin: 20px 24px;
+}
 
 
 
