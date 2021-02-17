@@ -165,7 +165,7 @@ ul {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  outline: 2px solid red;
+  /*outline: 2px solid red;*/
 }
 
 .section {
@@ -350,6 +350,9 @@ ul {
   padding-bottom: 94px;
 }
 
+.portfolio-header{
+      border-bottom: 1px solid #ECECEC;
+}
 .filter-buttons {
   display: flex;
   justify-content: center;
