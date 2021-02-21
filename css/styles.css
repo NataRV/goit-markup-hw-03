@@ -114,7 +114,7 @@ p {
   border-radius: 4px;
   padding: 6px 22px;
 }
-.filter-items:not(last-child) {
+.filter-items:not(:last-child) {
   margin-right: 8px;
 }
 .modal-btn:hover,
@@ -171,13 +171,26 @@ ul {
 .section {
   padding-bottom: 94px;
 }
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 /* ========== END COMPONENTS ========== */
 
 /* ========== HERO ========== */
 .hero {
-      justify-content: center;
-    display: flex;
- text-align: center;
+  justify-content: center;
+  display: flex;
+  text-align: center;
   outline: 2px solid red;
   padding-top: 200px;
   padding-bottom: 200px;
@@ -216,10 +229,8 @@ ul {
 .hero-btn {
   cursor: pointer;
 }
-.hero-text{
-  
+.hero-text {
   max-width: 696px;
-  
 }
 /* ========== END HERO ========== */
 
@@ -249,8 +260,7 @@ ul {
 .list {
   display: flex;
 }
-.list > .list-item{
-
+.list > .list-item {
   min-width: 270px;
 }
 /* ========== End Feature========== */
@@ -301,8 +311,8 @@ ul {
 .text-our-team {
   padding-top: 30px;
   padding-bottom: 30px;
-  padding-left: 59px;
-  padding-right: 59px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .team-list-item {
@@ -350,8 +360,8 @@ ul {
   padding-bottom: 94px;
 }
 
-.portfolio-header{
-      border-bottom: 1px solid #ECECEC;
+.portfolio-header {
+  border-bottom: 1px solid #ececec;
 }
 .filter-buttons {
   display: flex;
@@ -363,7 +373,6 @@ ul {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--primary-text-color);
-  margin-top: 20px;
   margin-bottom: 4px;
 }
 .project-type {
@@ -382,6 +391,7 @@ ul {
   display: block;
   margin-bottom: 30px;
   margin-right: 30px;
+  min-width: 370px;
 }
 .projects-item:nth-child(3n) {
   margin-right: 0;
